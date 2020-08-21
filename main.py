@@ -75,3 +75,8 @@ for f in ['city']:
     print(123)
     # test_data["impact_encoded_{}".format(f)] = test_data.apply(
     #     lambda x: mapping[x[f]] if x[f] in mapping else default_mean, axis=1)
+
+
+from lightgbm import LGBMClassifier
+
+LGBMClassifier(reg_lambda=100,)
